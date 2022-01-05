@@ -33,7 +33,7 @@ const Home = () => {
         <a href="https://github.com/shalini47ch"><BsGithub color="white" size="30px" /></a>
         <a href="https://www.linkedin.com/in/shalini9ch/"><BsLinkedin color="blue" size="30px" /></a>
         <a href="https://medium.com/@shalini47choudhary"><FaMedium color="white" size="30px"/></a>
-        <a href=""><FaDev color="white" size="30px"/></a>
+        <a href="https://dev.to/shalini47ch"><FaDev color="white" size="30px"/></a>
       </div>
       <div className="hire-me">
       <button>Hire Me</button>
