@@ -1,0 +1,27 @@
+.about {
+  /* margin-top: 100px; */
+  margin-left: 70px;
+  display: flex;
+}
+img {
+  width: 30%;
+  border-radius: 10px;
+}
+.user-info {
+  background: maroon;
+  color: white;
+  margin-left: 30px;
+  width: 40%;
+  border-radius: 15px;
+}
+h1 {
+  color: gold;
+  font-size: 40px;
+  text-align: center;
+}
+.data {
+  color: white;
+  margin: 15px;
+  font-size: 16px;
+  font-style: italic;
+}

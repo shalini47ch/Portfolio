@@ -1,0 +1,73 @@
+.navbar {
+  /* background: #242b2e; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.navbar-btn {
+  border: none;
+  font-size: 1.7rem;
+  background: none;
+  /* color: #fff; */
+  cursor: pointer;
+  outline: none;
+}
+.brand {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  /* text-transform: uppercase; */
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navigation ul {
+  color: orange;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation li {
+  display: inline;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+.navigation li a{
+  text-decoration:none;
+  color:white;
+}
+.navigation li:hover {
+  background: maroon;
+  padding: 10px;
+}
+/*for smaller devices like tablets and small ipads*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
+/*for mobile screens 480px*/
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .brand {
+    display: none;
+  }
+  .navigation li {
+    font-size: 12px;
+  }
+}
