@@ -6,6 +6,9 @@ import { FaMedium, FaDev } from "react-icons/fa";
 import "./style.css";
 
 const Home = () => {
+  const downloadFile=()=>{
+    window.location.href="https://drive.google.com/drive/folders/1D1MAz6rY_CBHV0xMAST5rPbe7pu28CdS"
+  }
   return (
     <>
       <div className="wrapper">
@@ -37,7 +40,7 @@ const Home = () => {
       </div>
       <div className="hire-me">
       <button>Hire Me</button>
-      <button>Resume</button>
+      <button onClick={downloadFile}>Resume</button>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ import "./style.css";
 const About = () => {
   return (
     <div className="about">
-      <img src={logo} />
+      <img src={logo} alt="icon"/>
       <p className="user-info">
       <FcGraduationCap size="60px"/>
         <h1>
