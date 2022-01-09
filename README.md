@@ -2,7 +2,7 @@
  
  https://portfolio-shalini.netlify.app/
  
- Tech Stack: React JS ,HTML5,CSS3,JS
+ Tech Stack: React JS ,HTML5,CSS3,JS,Material UI
  
  1.Used React to Build the portfolio.
  
