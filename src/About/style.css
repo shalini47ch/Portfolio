@@ -1,5 +1,4 @@
 .about {
-  /* margin-top: 100px; */
   margin-left: 70px;
   display: flex;
 }
@@ -18,10 +17,60 @@ h1 {
   color: gold;
   font-size: 40px;
   text-align: center;
+  white-space: nowrap;
 }
 .data {
   color: white;
   margin: 15px;
   font-size: 16px;
   font-style: italic;
+}
+/* media query for mobile phones and small devices*/
+@media (max-width:480px){
+  .about{
+    margin-top:60px;
+  }
+  img{
+    width:160px;
+  }
+  .user-info{
+    margin-left:10px;
+    width:90%;
+    margin-right:10px;
+  }
+  h1{
+    font-size:30px;
+  }
+
+  .data{
+    /* margin:10px; */
+    font-size:12px;
+  }
+  
+}
+
+/*low resolution tablets and ipads*/
+@media (min-width: 481px) and (max-width: 767px) {
+  img {
+    width: 200px;
+  }
+  .user-info {
+    margin-left: 10px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .data {
+    margin: 10px;
+    font-size: 12px;
+  }
+}
+/*Tablets and Ipad in the portrait mode*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user-info {
+    width: 110%;
+    margin-right: 20px;
+  }
 }

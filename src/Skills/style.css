@@ -6,6 +6,7 @@
   font-size: 14px;
   border-radius: 12px;
   animation: pulse 5s infinite, pulse 3s ease infinite alternate;
+  
 }
 @keyframes pulse {
   0% {
@@ -31,3 +32,21 @@
 .tools {
   margin: 20px;
 }
+/*Code for responsive website*/
+/*mobile view*/
+/* @media (max-width:480px){
+  .skills{
+    margin-left:70px;
+    width:80%;
+    
+  }
+} */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .skills{
+    width:60%;
+    margin-left:230px;
+    margin-top:140px;
+  }
+  
+  }
+

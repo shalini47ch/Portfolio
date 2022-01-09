@@ -17,7 +17,7 @@ export default function Tools() {
       <Button variant="contained" color="error">
         NVDA
       </Button>
-      <Button variant="contained" color="error">
+      <Button variant="contained" color="error" className="jira">
         Jira
       </Button>
     </Stack>
