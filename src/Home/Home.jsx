@@ -9,6 +9,9 @@ const Home = () => {
   const downloadFile=()=>{
     window.location.href="https://drive.google.com/drive/folders/1D1MAz6rY_CBHV0xMAST5rPbe7pu28CdS"
   }
+  const hireme=()=>{
+    window.location.href="https://shalini47choudhary@gmail.com"
+  }
   return (
     <>
       <div className="wrapper">
@@ -39,7 +42,7 @@ const Home = () => {
         <a href="https://dev.to/shalini47ch"><FaDev color="white" size="30px"/></a>
       </div>
       <div className="hire-me">
-      <button>Hire Me</button>
+      <button onClick={hireme}>Hire Me</button>
       <button onClick={downloadFile}>Resume</button>
       </div>
     </>

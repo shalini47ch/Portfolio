@@ -20,6 +20,7 @@ body {
   color: #fff;
   font-size: 60px;
   font-weight: 400;
+  white-space: nowrap;
 }
 .wrapper .dynamic-txts {
   margin-left: 15px;
@@ -89,4 +90,57 @@ button {
   background: maroon;
   color: white;
   border: 0;
+  cursor:pointer;
+}
+/*media query for mobiles*/
+@media (max-width: 480px) {
+  .wrapper .static-txt {
+    white-space: nowrap;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .dynamic-txts li {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p {
+    margin-left: 20px;
+  }
+  button{
+    width:20%;
+  }
+}
+/*media query for smaller ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .wrapper .static-txt {
+    white-space: nowrap;
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .dynamic-txts li {
+    list-style: none;
+    color: #fc6d6d;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+  }
+  p {
+    margin-left: 20px;
+  }
+  button {
+    width: 20%;
+  }
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 3s steps(10) infinite;
+  }
 }

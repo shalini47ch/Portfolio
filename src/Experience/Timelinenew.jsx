@@ -3,9 +3,7 @@ import React from "react";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import logo from "./image.png";
 import "./style.css";
@@ -21,7 +19,7 @@ export default function CustomizedTimeline() {
               2021-Nov 2021)
             </span>
           </div>
-          <div>
+          <div className="information">
             Implemented HTML, CSS, JavaScript, and React JS to create responsive
             and accessible web pages for a client. Employed the micro frontend
             architecture and adopted the atomic design pattern. As a result of
@@ -34,8 +32,7 @@ export default function CustomizedTimeline() {
           </div>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot></TimelineDot>
-          <TimelineConnector />
+        
         </TimelineSeparator>
         <TimelineContent></TimelineContent>
       </TimelineItem>
@@ -47,15 +44,14 @@ export default function CustomizedTimeline() {
               Technology(Jan 2021-Aug 2021)
             </span>
           </div>
-          <div>
+          <div className="information">
             Developed leading-edge e-commerce websites. Reusable CSS files were
             created by implementing TDD. Applied Context Api and used linters
             such as eslint and prettier to improve code quality by 40%.
           </div>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary"></TimelineDot>
-          <TimelineConnector />
+         
         </TimelineSeparator>
         <TimelineContent></TimelineContent>
       </TimelineItem>
