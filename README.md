@@ -1,4 +1,4 @@
- Deployed using Netlify :
+ Deployed using Netlify 
  
  https://portfolio-shalini.netlify.app/
  
@@ -12,7 +12,7 @@
  
  4.The contact form supports a special functionality the message the user sends will be sent to the developer's email.Achieved through email.js
  
- 5.Used material UI for building the experience component.
+ 5.Used material UI for building the experience part of the portfolio
  
  6.Responsive for mobile,ipad and desktop.
  
