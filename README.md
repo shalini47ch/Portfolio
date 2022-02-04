@@ -1,4 +1,4 @@
- Deployed using Netlify 
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23D248F7&lines=Personal+Portfolio)](https://git.io/typing-svg)
  
  https://portfolio-shalini.netlify.app/
  
