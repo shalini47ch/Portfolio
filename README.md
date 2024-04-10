@@ -1,6 +1,9 @@
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23D248F7&lines=Personal+Portfolio)](https://git.io/typing-svg)
  
  https://portfolio-shalini.netlify.app/
+
+ <img width="516" alt="image" src="https://github.com/shalini47ch/Portfolio/assets/60210475/71fc8ad1-9e01-4a1a-9c85-3f537a51cc33">
+
  
  Tech Stack: React JS ,HTML5,CSS3,JS,Material UI
  
@@ -17,6 +20,13 @@
  6.Responsive for mobile,ipad and desktop.
  
  <img width="957" alt="image" src="https://user-images.githubusercontent.com/60210475/148688232-2f8b8160-dfee-40b9-93bf-d68e99bda0f9.png">
+ 
+ Class Diagram
+ 
+<img width="178" alt="image" src="https://github.com/shalini47ch/Portfolio/assets/60210475/c6ff25a9-25b0-47f1-90d5-1f1fd325c63a">
+
+
+
 
  
  
