@@ -21,13 +21,13 @@ const Home = () => {
             <span>Software Engineer</span>
           </li>
           <li>
-            <span>Frontend Developer</span>
+            <span>FullStack Developer</span>
           </li>
           <li>
             <span>Curious Learner</span>
           </li>
           <li>
-            <span>Technical Blogger</span>
+            <span>Problem Solver</span>
           </li>
         </ul>
       </div>

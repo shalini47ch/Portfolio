@@ -8,6 +8,8 @@ import Home from "./Home/Home";
 import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
+import Projects from "./Projects/Projects";
+import Research from "./Research/Research"
 
 function App() {
   return (
@@ -30,6 +32,14 @@ function App() {
           </Route>
           <Route path="/skills">
             <Skills />
+          </Route>
+         
+
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/research">
+            <Research />
           </Route>
           <Route path="/contact">
             <Contact />

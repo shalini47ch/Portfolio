@@ -1,93 +1,105 @@
 import React from "react";
-import "./style.css";
-import { DiJavascript, DiPython } from "react-icons/di";
+import {
+  FaPython,
+  FaJs,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaNodeJs,
+  FaCloud,
+  FaGit,
+  FaGithub,
+  FaGitlab,
+  FaBitbucket,
+} from "react-icons/fa";
 import {
   SiCplusplus,
-  SiHtml5,
-  SiCss3,
-  SiTensorflow,
-  SiKeras,
-  SiVisualstudiocode,
-  SiSublimetext,
-  SiBitbucket,
-  SiPostman,
-  SiLeetcode,
-  SiGeeksforgeeks,
+  SiRedis,
+  SiMysql,
+  SiMongodb,
+  SiTailwindcss,
+  SiRender,
+  SiExpress 
+
 } from "react-icons/si";
-import { BsBootstrapFill } from "react-icons/bs";
-import { ImAccessibility } from "react-icons/im";
-import { GrReactjs } from "react-icons/gr";
-import { AiOutlineGithub } from "react-icons/ai";
-import { RiGitlabFill } from "react-icons/ri";
-import { FaHackerrank } from "react-icons/fa";
+import { BiLogoNetlify } from "react-icons/bi";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
-const leetcode = () => {
-  window.location.href = "https://leetcode.com/shalini47choudhary/";
-};
-
-const gfg = () => {
-  window.location.href =
-    "https://auth.geeksforgeeks.org/user/shalinichoudhary/practice/";
-};
-
-const hackerrank = () => {
-  window.location.href = "https://www.hackerrank.com/Shalini09";
-};
 
 const Skills = () => {
   return (
-    <>
-      <div>
-        <div className="languages">
-          <p>Languages</p>
-          <div>
-            <DiJavascript color="yellow" size="50px" />
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      paddingTop="20px" 
+      paddingBottom="20px" 
+      margin="50px"
+    >
+      <Card className="skill-card" style={{ width: "80%" }}>
+        <CardContent>
+          <SkillGroup>
+            <SkillCard icon={<FaPython />} title="Python" />
+            <SkillCard icon={<FaJs />} title="JavaScript" />
+            <SkillCard icon={<SiCplusplus />} title="C++" />
 
-            <DiPython color="blue" size="50px" />
+            <SkillCard icon={<FaHtml5 />} title="HTML5" />
+            <SkillCard icon={<FaCss3 />} title="CSS3" />
+            <SkillCard icon={<FaReact />} title="React.js" />
+            <SkillCard icon={<SiTailwindcss />} title="Tailwind CSS" />
+            <SkillCard title="Material Ui" />
 
-            <SiCplusplus color="red" size="50px" />
-          </div>
-        </div>
+            <SkillCard icon={<FaNodeJs />} title="Node.js" />
+            <SkillCard icon={<SiExpress/>}title="Express.js" />
+            <SkillCard icon={<SiRedis />} title="Redis" />
+            <SkillCard icon={<SiMysql />} title="MySQL" />
+            <SkillCard icon={<SiMongodb />} title="MongoDB" />
 
-        <div className="web-technolgies">
-          <p>Web Technologies</p>
-          <div className="icons2">
-            <SiHtml5 color="orange" size="50px" />
-            <SiCss3 color="yellow" size="50px" />
-            <BsBootstrapFill color="purple" size="50px" />
-            <ImAccessibility color="white" size="50px" />
-          </div>
-        </div>
-
-        <div className="libraries">
-          <p>Libraries and Framework</p>
-          <div className="icons-3">
-            <GrReactjs color="blue" size="50px" />
-            <SiTensorflow color="orange" size="50px" />
-            <SiKeras color="red" size="50px" />
-          </div>
-        </div>
-        <div className="tools">
-          <p>Tools</p>
-          <div className="icons-4">
-            <SiVisualstudiocode color="blue" size="50px" />
-            <SiSublimetext color="orange" size="50px" />
-            <AiOutlineGithub color="white" size="50px" />
-            <RiGitlabFill color="orange" size="50px" />
-            <SiBitbucket color="blue" size="50px" />
-            <SiPostman color="orange" size="50px" />
-          </div>
-        </div>
-      </div>
-      <div className="problem-solving">
-        <p>Check coding profiles</p>
-        <div className="icons-5">
-          <SiLeetcode color="orange" size="50px" onClick={leetcode} />
-          <SiGeeksforgeeks color="green" size="50px" onClick={gfg} />
-          <FaHackerrank color="green" size="50px" onClick={hackerrank} />
-        </div>
-      </div>
-    </>
+            <SkillCard icon={<BiLogoNetlify/>} title="Netlify" />
+            <SkillCard icon={<FaCloud />} title="Heroku" />
+            <SkillCard icon={<SiRender/>}title="Render" />
+            <SkillCard icon={<FaGit />} title="Git" />
+            <SkillCard icon={<FaGithub />} title="GitHub" />
+            <SkillCard icon={<FaGitlab />} title="Gitlab" />
+            <SkillCard icon={<FaBitbucket />} title="Bitbucket" />
+          </SkillGroup>
+        </CardContent>
+      </Card>
+    </Box>
   );
 };
+
+const SkillGroup = ({ children }) => {
+  return (
+    <Box display="flex" flexDirection="row" flexWrap="wrap" backgroundColor="maroon">
+      {children}
+    </Box>
+  );
+};
+
+const SkillCard = ({ icon, title }) => {
+  return (
+    <Card
+      className="skill-card"
+      style={{
+        minWidth: "80px",
+        margin: "10px",
+        backgroundColor: "lightblue",
+        borderRadius: "40px",
+        
+      }}
+    >
+      <CardContent style={{ display: "flex", alignItems: "center" }}>
+        {icon}
+        <Typography variant="body1" style={{ marginLeft: "10px" }}>
+          {title}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
+
 export default Skills;
