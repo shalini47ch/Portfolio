@@ -1,76 +1,27 @@
-.about {
-  margin-left: 70px;
-  display: flex;
-}
-img {
-  width: 30%;
-  border-radius: 10px;
-}
-.user-info {
-  background: maroon;
-  color: white;
-  margin-left: 30px;
-  width: 40%;
-  border-radius: 15px;
-}
-h1 {
-  color: gold;
-  font-size: 40px;
-  text-align: center;
-  white-space: nowrap;
-}
-.data {
-  color: white;
-  margin: 15px;
-  font-size: 16px;
-  font-style: italic;
-}
-/* media query for mobile phones and small devices*/
-@media (max-width:480px){
-  .about{
-    margin-top:60px;
-  }
-  img{
-    width:160px;
-  }
-  .user-info{
-    margin-left:10px;
-    width:90%;
-    margin-right:10px;
-  }
-  h1{
-    font-size:30px;
-  }
-
-  .data{
-    /* margin:10px; */
-    font-size:12px;
-  }
-  
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
 }
 
-/*low resolution tablets and ipads*/
-@media (min-width: 481px) and (max-width: 767px) {
-  img {
-    width: 200px;
+@keyframes fadeIn {
+  from {
+      opacity: 0;
   }
-  .user-info {
-    margin-left: 10px;
-    width: 100%;
-    margin-right: 20px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  .data {
-    margin: 10px;
-    font-size: 12px;
+  to {
+      opacity: 1;
   }
 }
-/*Tablets and Ipad in the portrait mode*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .user-info {
-    width: 110%;
-    margin-right: 20px;
+
+.slide-up {
+  animation: slideUp 2s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
   }
 }
