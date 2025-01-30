@@ -1,6 +1,6 @@
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23D248F7&lines=Personal+Portfolio)](https://git.io/typing-svg)
  
- https://portfolio-shalini.netlify.app/
+https://shalinicareerjourney.netlify.app/
 
  <img width="516" alt="image" src="https://github.com/shalini47ch/Portfolio/assets/60210475/71fc8ad1-9e01-4a1a-9c85-3f537a51cc33">
 
@@ -19,7 +19,8 @@
  
  6.Responsive for mobile,ipad and desktop.
  
- <img width="957" alt="image" src="https://user-images.githubusercontent.com/60210475/148688232-2f8b8160-dfee-40b9-93bf-d68e99bda0f9.png">
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/514df5c3-2371-4536-be2c-d8600e2158b2" />
+
  
  Class Diagram
  
