@@ -348,28 +348,6 @@ const Skills = () => (
   </Box>
 );
 
-// const Projects = () => (
-//   <Container>
-//     <Typography variant="h4" mt={10}>
-//       Projects Page
-//     </Typography>
-//   </Container>
-// );
-// const Research = () => (
-//   <Container>
-//     <Typography variant="h4" mt={10}>
-//       Research Page
-//     </Typography>
-//   </Container>
-// );
-const Contact = () => (
-  <Container>
-    <Typography variant="h4" mt={10}>
-      Contact Page
-    </Typography>
-  </Container>
-);
-
 const LeetcodeStats = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);

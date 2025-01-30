@@ -4,22 +4,17 @@ import {
   Container,
   Typography,
   Grid,
-  Link,
-  IconButton,
-  Avatar,
-  Card,
-  CardContent,
-  CardActions,
+ 
   Button,
 } from "@mui/material";
-import { FaGithub, FaMedium, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 import image from "./shalini.jpg";
+import Avatar from '@mui/material/Avatar';
 
 const About = () => {
-  const email = "shalini47choudhary@gmail.com";
+ 
   const githubProfile = "https://github.com/shalini47ch";
-  const mediumProfile = "https://medium.com/@shalini47choudhary";
-  const linkedinProfile = "https://www.linkedin.com/in/shalini9ch/";
+  
 
   const codingProfiles = [
     { name: "Leetcode", link: "https://leetcode.com/shalini47choudhary/" },
@@ -84,107 +79,7 @@ const About = () => {
             ))}
           </Grid>
         </Box>
-        {/* <Box mt={4}>
-          <Typography variant="h5" component="h2" gutterBottom>
-            Get in Touch
-          </Typography>
-          <Grid container spacing={2} alignItems="center">
-            <Grid item>
-              <IconButton
-                component={Link}
-                href={`mailto:${email}`}
-                color="inherit"
-                aria-label="Email"
-              >
-                <FaEnvelope size={30} />
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">{email}</Typography>
-            </Grid>
-          </Grid>
-          <Grid container spacing={2} alignItems="center" mt={2}>
-            <Grid item>
-              <IconButton
-                component={Link}
-                href={githubProfile}
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                aria-label="GitHub"
-              >
-                <FaGithub size={30} />
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">
-                <Link
-                  href={githubProfile}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  color="inherit"
-                  underline="hover"
-                >
-                  {githubProfile}
-                </Link>
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid container spacing={2} alignItems="center" mt={2}>
-            <Grid item>
-              <IconButton
-                component={Link}
-                href={mediumProfile}
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                aria-label="Medium"
-              >
-                <FaMedium size={30} />
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">
-                <Link
-                  href={mediumProfile}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  color="inherit"
-                  underline="hover"
-                >
-                  {mediumProfile}
-                </Link>
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid container spacing={2} alignItems="center" mt={2}>
-            <Grid item>
-              <IconButton
-                component={Link}
-                href={linkedinProfile}
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={30} />
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">
-                <Link
-                  href={linkedinProfile}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  color="inherit"
-                  underline="hover"
-                >
-                  {linkedinProfile}
-                </Link>
-              </Typography>
-            </Grid>
-          </Grid>
-        </Box> */}
+       
       </Container>
     </Box>
   );

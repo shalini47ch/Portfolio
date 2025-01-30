@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { FaGithub } from "react-icons/fa";
 import Chat from "./chat.png";
-import Travel from "./travel.png";
+
 import Filter from "./filter.png";
 import Box from "@mui/material/Box";
 import CardActions from "@mui/material/CardActions";
