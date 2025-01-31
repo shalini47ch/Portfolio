@@ -7,18 +7,7 @@ https://shalinicareerjourney.netlify.app/
  
  Tech Stack: React JS ,HTML5,CSS3,JS,Material UI
  
- 1.Used React to Build the portfolio.
- 
- 2.Followed atomic design pattern.
- 
- 3.Wrote test cases for each section.
- 
- 4.The contact form supports a special functionality the message the user sends will be sent to the developer's email.Achieved through email.js
- 
- 5.Used material UI for building the experience part of the portfolio
- 
- 6.Responsive for mobile,ipad and desktop.
- 
+
 <img width="950" alt="image" src="https://github.com/user-attachments/assets/514df5c3-2371-4536-be2c-d8600e2158b2" />
 
  
