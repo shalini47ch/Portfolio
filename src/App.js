@@ -3,7 +3,6 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   Container,
   Box,
   IconButton,
@@ -14,7 +13,6 @@ import {
   Chip,
   Fab,
   Tooltip,
-  useTheme,
   keyframes,
 } from "@mui/material";
 
@@ -60,20 +58,7 @@ const FloatingNav = styled(AppBar)(({ theme }) => ({
   border: "1px solid rgba(255, 255, 255, 0.1)",
 }));
 
-const GlowingButton = styled(Button)(({ theme, active }) => ({
-  borderRadius: "50px",
-  padding: "12px 24px",
-  color: active ? "#00bcd4" : "rgba(255, 255, 255, 0.7)",
-  background: active ? "rgba(0, 188, 212, 0.2)" : "transparent",
-  border: "1px solid rgba(255, 255, 255, 0.1)",
-  transition: "all 0.3s ease",
-  "&:hover": {
-    color: "#ffffff",
-    background: "rgba(0, 188, 212, 0.3)",
-    transform: "scale(1.05)",
-    boxShadow: "0 4px 20px rgba(0, 188, 255, 0.4)",
-  },
-}));
+
 
 const GlassCard = styled(Card)(({ theme }) => ({
   background: "rgba(255, 255, 255, 0.05)",
@@ -125,27 +110,11 @@ const FloatingParticles = styled(Box)(({ theme }) => ({
   },
 }));
 
-const SkillChip = styled(Chip)(({ theme, color }) => ({
-  background: "rgba(255, 255, 255, 0.05)",
-  backdropFilter: "blur(10px)",
-  border: "1px solid rgba(255, 255, 255, 0.1)",
-  color: color || "#ffffff",
-  margin: "8px",
-  fontSize: "16px",
-  padding: "24px 16px",
-  height: "auto",
-  transition: "all 0.3s ease",
-  "&:hover": {
-    transform: "scale(1.1)",
-    borderColor: "rgba(0, 188, 255, 0.5)",
-    background: "rgba(255, 255, 255, 0.1)",
-  },
-}));
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const theme = useTheme();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -272,7 +241,6 @@ const Portfolio = () => {
                 justifyContent: "center",
                 fontSize: "48px",
                 fontWeight: "bold",
-                background: "linear-gradient(45deg, #00bcd4, #9c27b0)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
