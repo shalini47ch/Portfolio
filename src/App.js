@@ -481,7 +481,7 @@ const Portfolio = () => {
                     <span style={{ color: "#00bcd4", fontWeight: "bold" }}>
                       Shalini
                     </span>{" "}
-                    ✨ — a dynamic and deeply driven Software Development
+                     a dynamic and deeply driven Software Development
                     Engineer who transforms complex challenges into elegant
                     solutions.
                   </Typography>
@@ -517,7 +517,7 @@ const Portfolio = () => {
                       fontStyle: "italic",
                     }}
                   >
-                    🔬 Beyond coding, I'm passionate about{" "}
+                    Beyond coding, I'm passionate about{" "}
                     <strong style={{ color: "#9c27b0" }}>
                       machine learning
                     </strong>{" "}
@@ -576,7 +576,7 @@ const Portfolio = () => {
                       fontSize: "1.1rem",
                     }}
                   >
-                    🚀 My superpower?{" "}
+                    My superpower?{" "}
                     <strong style={{ color: "#ff9800" }}>
                       Rapid adaptation
                     </strong>{" "}
