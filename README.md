@@ -1,34 +1,40 @@
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23D248F7&lines=Personal+Portfolio)](https://git.io/typing-svg)
- 
-https://shalinicareerjourney.netlify.app/
+# Personal Portfolio Website 
 
-<img width="957" height="414" alt="image" src="https://github.com/user-attachments/assets/876f661a-0567-4493-982f-585f3af38fba" />
+A modern, responsive portfolio application built with React and Tailwind CSS. Designed to showcase backend and distributed systems engineering expertise, featured projects, architectural write-ups, and competitive programming milestones.
 
+ **Live Demo:** [portfolio-shalini.netlify.app](https://portfolio-shalini.netlify.app/)
 
-<img width="950" height="413" alt="image" src="https://github.com/user-attachments/assets/5111a275-b255-4948-ab78-1b0fc37daf9a" />
+---
 
+##  Features
 
-<img width="952" height="413" alt="image" src="https://github.com/user-attachments/assets/d60f1620-43fc-454d-9eea-9c058cbf6582" />
+- **LeetCode & Competitive Programming Section:** Highlighting an active 1,600+ day unbroken streak, global rank (#1,578 / Top 0.03%), and 2,200+ solved algorithmic problems.
+- **Backend & Systems Showcase:** High-level summary of experience in Java, Spring Boot, microservices architecture, and database tuning.
+- **Featured Projects Grid:** Direct links to interactive sandboxes, full-stack web applications, and live repository demos.
+- **Technical Articles:** Embedded links to technical deep-dives on Low-Level Design (LLD) and system architectures.
+- **Fully Responsive & Dark Theme:** Built with a dark slate visual hierarchy and tailored accent accents for desktop and mobile devices.
 
+---
 
-<img width="677" height="331" alt="image" src="https://github.com/user-attachments/assets/490487a1-1e05-4133-9693-ce7c03bb65aa" />
+## 🛠️ Tech Stack
 
+- **Frontend:** React.js, Tailwind CSS
+- **Icons & UI Elements:** Heroicons / Lucide React
+- **Deployment & Hosting:** Netlify (Continuous Deployment via GitHub)
+- **Version Control:** Git & GitHub
 
-<img width="939" height="364" alt="image" src="https://github.com/user-attachments/assets/4cce254a-8d63-4314-bdef-0725944c1b51" />
+---
 
+##  Project Structure
 
-<img width="665" height="415" alt="image" src="https://github.com/user-attachments/assets/ba5fff56-6e6b-4616-9da8-a7757e0f16f8" />
-
-
- 
- Tech Stack: React JS ,HTML5,CSS3,JS,Material UI
- 
- Class Diagram
- 
-<img width="178" alt="image" src="https://github.com/shalini47ch/Portfolio/assets/60210475/c6ff25a9-25b0-47f1-90d5-1f1fd325c63a">
-
-
-
-
- 
- 
+```text
+portfolio/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── App.js           # Main portfolio component and data structure
+│   ├── index.js         # React root entry point
+│   └── index.css        # Tailwind CSS imports and custom utility classes
+├── package.json
+└── README.md
