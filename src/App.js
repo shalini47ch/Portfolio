@@ -429,12 +429,33 @@ function ArticlesSection() {
   );
 }
 
+/* ---------- AUTO-LOAD TAILWIND (no setup needed) ---------- */
+function useTailwind() {
+  const [ready, setReady] = useState(typeof window !== "undefined" && !!window.tailwind);
+  useEffect(() => {
+    document.body.style.background = "#05070f";
+    if (window.tailwind) { setReady(true); return; }
+    let s = document.querySelector("script[data-tw]");
+    if (!s) {
+      s = document.createElement("script");
+      s.src = "https://cdn.tailwindcss.com";
+      s.dataset.tw = "1";
+      document.head.appendChild(s);
+    }
+    const done = () => setTimeout(() => setReady(true), 150);
+    s.addEventListener("load", done);
+    return () => s.removeEventListener("load", done);
+  }, []);
+  return ready;
+}
+
 /* ---------- APP ---------- */
 function App() {
   const { personal, stats, projects } = data;
   const [active, setActive] = useState("about");
   const [progress, setProgress] = useState(0);
   const [menu, setMenu] = useState(false);
+  const ready = useTailwind();
 
   useEffect(() => {
     const onScroll = () => {
@@ -450,6 +471,8 @@ function App() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  if (!ready) return <div style={{ minHeight: "100vh", background: "#05070f" }} />;
 
   const glass = "bg-white/[0.03] backdrop-blur-xl border border-white/10";
 
