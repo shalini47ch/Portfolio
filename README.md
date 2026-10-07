@@ -4,6 +4,9 @@ A modern, responsive portfolio application built with React and Tailwind CSS. De
 
  **Live Demo:** [portfolio-shalini.netlify.app](https://portfolio-shalini.netlify.app/)
 
+ <img width="944" height="409" alt="image" src="https://github.com/user-attachments/assets/ff7b3a02-242b-4dcb-adbc-66e794e64145" />
+
+
 ---
 
 ##  Features
